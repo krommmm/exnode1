@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+    <title>Excercices node.js</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="./html/auth.html">Auth</a></li>
+        </ul>
+    </header>
+    <h1>Accueil - Exercices node.js</h1>
+    <main class="home">
+        <section class="home__formulaireAdd">
+            <h2>Formulaire AddMovie</h2>
+            <form id="home__formulaireAdd--formulaire" action="#" enctype='multipart/form-data'>
+                <div>
+                    <label for="home__formulaireAdd--name">Name:</label>
+                    <input type="text" name="name" id="home__formulaireAdd--name" placeholder="Name" />
+                </div>
+                <div>
+                    <label for="home__formulaireAdd--author">Author:</label>
+                    <input type="text" name="author" id="home__formulaireAdd--author" placeholder="Author" />
+                </div>
+                <div>
+                    <label for="home__formulaireAdd--img">Img:</label>
+                    <input type="file" name="img" id="home__formulaireAdd--img" />
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="home__movies">
+            <h2>Movies</h2>
+            <div class="home__movies__container"></div>
+        </section>
+    </main>
+
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
+    <title>Auth</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+        </ul>
+    </header>
+    <h1>Formulaires</h1>
+    <main class="auth">
+        <section class="auth__signUp">
+            <h2>Formulaire signUp</h2>
+            <form id="auth__signUp--form">
+                <div>
+                    <label for="auth__signUp--name">Name:</label>
+                    <input type="text" name="name" id="auth__signUp--name" placeholder="Name" />
+                </div>
+                <div>
+                    <label for="auth__signUp--email">Email:</label>
+                    <input type="email" name="email" id="auth__signUp--email" placeholder="Email" />
+                </div>
+                <div>
+                    <label for="auth__signUp--password">Password:</label>
+                    <input type="password" name="password" id="auth__signUp--password" placeholder="Password" />
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section class="auth__logIn">
+            <h2>Formulaire logIn</h2>
+            <form id="auth__logIn--form">
+                <div>
+                    <label for="auth__logIn--email">Email:</label>
+                    <input type="email" name="email" id="auth__logIn--email" placeholder="Email" />
+                </div>
+                <div>
+                    <label for="auth__logIn--password">Password:</label>
+                    <input type="password" name="password" id="auth__logIn--password" placeholder="Password" />
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="../js/index.js"></script>
+</body>
+
+</html>
