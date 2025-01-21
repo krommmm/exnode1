@@ -8,4 +8,4 @@ bdd mongoDb
     PORT=""
 
 
-    fichier config.js => indiquer address + port
+    file config.js =>  address + port
