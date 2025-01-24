@@ -1,3 +1,40 @@
-.home__formulaireAdd{
-    display:none;
+.home__formulaireAdd {
+    display: none;
+}
+
+.home__movies__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home__movies__container__card {
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    margin: 15px;
+    cursor:pointer;
+}
+
+.home__movies__container__card__header--name {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.home__movies__container__card__body img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.home__movies__container__card__footer{
+    display:flex;
+    justify-content:space-between;
+}
+.btn{
+    border: none;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
 }

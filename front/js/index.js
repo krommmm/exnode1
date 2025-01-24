@@ -5,12 +5,16 @@ import { SAuth } from "./classes/services/SAuth.js";
 import { MMovies } from "./classes/models/MMovies.js";
 import { UMovies } from "./classes/ui/UMovies.js";
 import { SMovies } from "./classes/services/SMovies.js";
+import { ModalMovie } from "./classes/models/ModalMovie.js";
+import { DomManipulator } from "./classes/ui/DomManipulator.js";
 
 const mAuth = new MAuth();
 const sAuth = new SAuth();
 const mMovies = new MMovies();
 const uMovies = new UMovies();
 const sMovies = new SMovies();
+const domManip = new DomManipulator();
+
 
 const str = window.location.href;
 const url = new URL(str);
@@ -24,7 +28,7 @@ const page = findPageNameFromUrl(url);
 
 switch (page) {
     case "index":
-        new HomeCtrl(mMovies, uMovies, sMovies, sAuth, mAuth);
+        new HomeCtrl(mMovies, uMovies, sMovies, sAuth, mAuth,  new ModalMovie("#modalContainer", domManip));
         break;
 
     case "auth":
